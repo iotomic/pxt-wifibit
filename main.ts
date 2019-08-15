@@ -168,7 +168,7 @@ namespace WiFiBit {
         executeHttpMethod(
             HttpMethod.GET,
             "blynk-cloud.com",
-            80,
+            9443,
             "/" + auth_token + "/get/" + pin
         )
         let value: string = response.substr(response.indexOf("[") + 2, response.indexOf("]") - response.indexOf("[") - 3)
