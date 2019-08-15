@@ -146,7 +146,7 @@ namespace WiFiBit {
     export function writePinValue(value: string, pin: string, auth_token: string): void {
         executeHttpMethod(
             HttpMethod.GET,
-            "blynk-cloud.com",
+            "10.90.120.18",
             80,
             "/" + auth_token + "/update/" + pin + "?value=" + value
         )
